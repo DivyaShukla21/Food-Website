@@ -1,0 +1,135 @@
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:20px 20px 120px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2{
+        font-size: 4em;
+        margin-bottom: 15px;
+    }
+    .content .textBox{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .circle{
+        clip-path: circle(300px at center bottom);
+    }
+    .content .imgBox{
+        margin-top: 120px;
+        width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img{
+        max-width: 300px;
+    }
+    .thumb li img{
+        max-width: 60px;
+    }
+
+    .content .textBox a{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; 
+        right: -100%;
+        /* background: #fff; */
+        background: url(/images/nav-bg.jpg)no-repeat center center/cover;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        /* color:var(--black); */
+        color: #fff;
+        display: block;
+        margin:2rem;
+        padding:.5rem;
+        font-size: 2.5rem;
+        margin-left: 100px;
+    }
+
+    .header .navbar a:nth-child(1){
+        margin-top: 100px;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+/* Login Page media queries */
+@media screen and (min-width: 576px){
+    .login__forms{
+      width: 348px;
+      justify-self: center;
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    .login{
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    .login__content{
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      align-items: center;
+      margin-left: 10rem;
+    }
+  
+    .login__img{
+      display: flex;
+      width: 600px;
+      height: 588px;
+      background-color: #F2F2F2;
+      border-radius: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .login__img img{
+      width: 390px;
+      margin-top: 0;
+    }
+  
+    .login__registre, .login__create{
+      left: -11rem;
+    }
+  
+    .login__registre{
+      bottom: -2rem;
+    }
+  
+    .login__create{
+      bottom: -5.5rem;
+    }
+  }
